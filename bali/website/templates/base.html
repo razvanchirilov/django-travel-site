@@ -1,0 +1,43 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'website/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'website/css/slider.css' %}">
+</head>
+<body>
+    <header>
+      <div class="container_12">
+        <div class="grid_12">
+          <h1><a href="home.html"><img src="{% static 'website/images/logo _first 180x180.png' %}" alt=""></a></h1>
+          <div class="clear"></div>
+        </div>
+        <div class="menu_block">
+          <nav>
+            <ul class="sf-menu">
+              <li class="current"><a href="/">Home</a></li>
+              <li class="with_ul"><a href="about/">About me</a>
+                <ul>
+                  <li><a href="#">Agency</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Team</a></li>
+                </ul>
+              </li>
+              <li><a href="gallery/">Gallery</a></li>
+              <li><a href="tours/">Tours</a></li>
+              <li><a href="blog/">Blog</a></li>
+              <li><a href="contacts/">Contacts</a></li>
+            </ul>
+          </nav>
+          <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </header>
+{% block content %}
+{% endblock %}
+</body>
+
+</html>
